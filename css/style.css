@@ -65,43 +65,13 @@ h6 {
 
 .contacts .link{
     color: var(--grey-color);
+    fill: var(--grey-color);
     padding: 10px 0;
 }
 
-.contacts .mail::before{
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-}
-
-.contacts .mail::before{
-    background-image: url(../images/icons/envelope.svg);
-    fill: var(--grey-color);
-    stroke: green;
-}
-
-.contacts .mail:hover::before{
-    fill: var(--hover-color);
-}
-
-.contacts .phone::before{
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 16px;
-    /* background-color: black; */
-    margin-right: 10px;
-}
-
-.contacts .phone::before{
-    background-image: url(../images/icons/smartphone.svg);
-    fill: var(--grey-color)
-}
-
-.contacts .phone:hover::before{
-    fill: var(--hover-color);
+.contacts .link{ 
+    display: flex;
+    align-items:center;
 }
 
 .contacts{
@@ -110,9 +80,14 @@ h6 {
     line-height: 1.142em;
     letter-spacing: 0.02em;
 }
-.contacts:hover,
-.contacts:focus{
+.contacts .link:hover,
+.contacts .link:focus{
     color: var(--hover-color);
+    fill: var(--hover-color);
+}
+
+.contacts .link .icon{
+    margin-right: 10px;
 }
 
 .visually-hidden{
@@ -132,7 +107,6 @@ h6 {
 .section{
     padding: 94px 0;
 }
-
 
 /* Upper line */
 
@@ -340,7 +314,8 @@ h6 {
 
 /* Title section */
 .title-section{
-    background: url(../images/background-pics/background-title.jpg), rgba(47, 48, 58, 0.6);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)),
+                      url(../images/background-pics/background-title.jpg);
     background-size: cover;
     max-width: 1600px;
     background-position:top, center;
