@@ -68,6 +68,42 @@ h6 {
     padding: 10px 0;
 }
 
+.contacts .mail::before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.contacts .mail::before{
+    background-image: url(../images/icons/envelope.svg);
+    fill: var(--grey-color);
+    stroke: green;
+}
+
+.contacts .mail:hover::before{
+    fill: var(--hover-color);
+}
+
+.contacts .phone::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    /* background-color: black; */
+    margin-right: 10px;
+}
+
+.contacts .phone::before{
+    background-image: url(../images/icons/smartphone.svg);
+    fill: var(--grey-color)
+}
+
+.contacts .phone:hover::before{
+    fill: var(--hover-color);
+}
+
 .contacts{
     font-weight: 500;
     font-size: 14px;
