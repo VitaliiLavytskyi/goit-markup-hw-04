@@ -414,7 +414,7 @@ padding-top: 0;
 
 .team-section .list{
     display: flex;
-    /* margin-top: 50px; */
+    justify-content: center;
 }
 
 .team-section .list > li{
@@ -456,9 +456,6 @@ padding-top: 0;
     height: 44px;
 }
 
-.team-list .item .team-socials .social-item:first-child{
-    margin-left: 32px;
-}
 .team-list .item .team-socials .social-item:nth-child(n+2){
     margin-left: 10px;
 }
