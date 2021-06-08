@@ -11,6 +11,9 @@
     --icon-color: #AFB1B8;
     --icon-contacts-color: #fff;
     --icon-bg-contacts-color: rgba(255, 255, 255, 0,1);
+    --icon-team-color:#AFB1B8;
+    --icon-team-hover-color: #fff;
+    --icon-team-bg-hover-color: #2196F3;
 }
 
 /* COMMON SELECTORS */
@@ -405,12 +408,16 @@ padding-top: 0;
     background-color: var(--ash-grey-color) ;
 }
 
-.team-section .list{
-    display: flex;
-    margin-top: 50px;
+.team-section .team-header{
+    margin-bottom: 50px;
 }
 
-.team-section .list li{
+.team-section .list{
+    display: flex;
+    /* margin-top: 50px; */
+}
+
+.team-section .list > li{
     background-color: var(--white-color);
     width: 270px;
     border-radius: 0px 0px 4px 4px;
@@ -434,9 +441,41 @@ padding-top: 0;
 
 .team-section .list .text{
     display: flex;
-    padding: 30px;
+    padding: 30px 30px 0 30px;
     flex-direction: column;
     align-items: center;
+}
+
+.team-list .item .team-socials .social-item{
+    margin: 0;
+    box-shadow: none;
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    width: 44px;
+    height: 44px;
+}
+
+.team-list .item .team-socials .social-item:first-child{
+    margin-left: 32px;
+}
+.team-list .item .team-socials .social-item:nth-child(n+2){
+    margin-left: 10px;
+}
+
+.team-socials .item .refer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    fill: var(--icon-team-color);
+}
+.team-socials .item .refer:hover{
+    background-color: var(--icon-team-bg-hover-color);
+    fill: var(--icon-team-hover-color);
 }
 
 /* Our team section */
